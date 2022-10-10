@@ -139,7 +139,7 @@ section {
 }
 
 .bg {
-    background: url(background_1.jpg);
+    background: url(../background_1.jpg);
 }
 
 h3 {
@@ -175,7 +175,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .form {
     border-radius: 5px;
     background-color: #f2f2f2;
