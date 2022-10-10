@@ -114,7 +114,7 @@ span {
 
 section {
     min-height: 100vh;
-    background: url(background_1.jpg);
+    background: url(../background_1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
