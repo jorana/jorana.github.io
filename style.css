@@ -1,0 +1,183 @@
+.wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .banner {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:auto;
+  }
+  
+  .content {
+    position: relative;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: #161616;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+
+.container .menu {
+    color: gainsboro;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg, red, orangered);
+}
+
+ol {
+    width: 100%;
+    list-style: none;
+}
+
+ol li {
+    display: block;
+    width: 100%;
+}
+
+ol li a {
+    color: whitesmoke;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+ol li a i {
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+ol li:hover a{
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 5px;
+}
+
+input {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: whitesmoke;
+    padding: 3px 8px;
+    background: #000;
+}
+
+#bars {
+    background: red;
+}
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+#check:checked ~ .container #bars{
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    background: url(../lab01/images/background_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(60%);
+}
+
+#check:checked ~ section{
+    transform: scale(1.2);
+    filter: brightness(20%);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about div {
+    height: 220px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg {
+    background: url(../lab01/images/background_1.jpg);
+}
+
+h3 {
+    text-align: justify;
+    color: lightcoral;
+    text-rendering: optimizeLegibility;
+    font-size: xx-large;
+}
+
+.input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
