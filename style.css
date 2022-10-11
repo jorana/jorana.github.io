@@ -1,9 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+body {
+    /*overflow: hidden;*/
+    min-height: 105vh;
+    background: url(../lab01/images/fantasy-iphone-wallpaper-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    filter: brightness(60%);
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .wrap {
     overflow: hidden;
     position: relative;
-  }
-  
-  .banner {
+}
+
+.banner {
     opacity: 0.6;
     position: absolute;
     left: 0;
@@ -11,20 +36,14 @@
     width: 100%;
     height:auto;
   }
-  
-  .content {
-    position: relative;
-  }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
-    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: white;
 }
 
 .container {
@@ -84,7 +103,7 @@ ol li:hover a{
     letter-spacing: 5px;
 }
 
-input {
+.input {
     -webkit-appearance: none;
     visibility: hidden;
     display: none;
@@ -112,71 +131,183 @@ span {
     display: none;
 }
 
-section {
-    min-height: 100vh;
-    background: url(background_1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
-    filter: brightness(60%);
-}
+
 
 #check:checked ~ section{
     transform: scale(1.2);
     filter: brightness(20%);
 }
 
-.about {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+
+form {
+    background: rgba(27,31,34,0.80);
+    width: 640px;
+    margin: 50px auto;
+    max-width: 97%;
+    border-radius: 4px;
+    padding: 55px 30px;
 }
 
-.about div {
-    height: 220px;
-    background-size: cover;
-    background-attachment: fixed;
+.form.title h2 {
+    letter-spacing: 6px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 32px;
 }
 
-.bg {
-    background: url(background_1.jpg);
+form .half {
+    display: flex;
+    justify-content: space-between;
 }
 
-h3 {
-    text-align: justify;
-    color: lightcoral;
-    text-rendering: optimizeLegibility;
-    font-size: xx-large;
+form .half .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 48%;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+form label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+}
+
+form .half .item input {
+    border-radius: 4px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    font-size: 17px;
+}
+
+form .full {
+    margin-bottom: 24px;
+}
+
+form .full textarea {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 12px 16px;
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+}
+
+form .action {
+    margin-bottom: 32px;
+}
+
+form .action input {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+}
+
+form .icons a{
+    border:  1px solid white;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    font-stretch: 600;
+    width: 38px;
+    margin-right: 10px;
+}
+
+.image_grid {
+    --num-cols: 2;
+    --row-height: 200px;
+}
+
+.image_grid > img {
+    width: 100%;
+    height: 100%;
 }
 
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+
+@media screen and (min-width: 800px) {
 
 
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
-.form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    body {
+        /*overflow: hidden;*/
+        min-height: 100vh;
+        background: url(../lab01/images/background_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+        filter: brightness(60%);
+    }
+
+    section {
+        min-height: 100vh;
+        background: url(../lab01/images/background_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+        filter: brightness(100%);
+    }
+
+    .image_grid {
+        --gap: 16px;
+        --num-cols: 4;
+        --row-height: 300px;
+    
+        box-sizing: border-box;
+        padding: var(--gap);
+    
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+    }
+    
+    .image-grid-col-2 {
+        grid-column: span 2;
+    }
+
+    .image-grid-row-2 {
+        grid-row: span 2;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .about div {
+        height: 220px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .bg {
+        background: url(../lab01/images/background_1.jpg);
+    }
+    
+    h3 {
+        text-align: justify;
+        color: lightcoral;
+        text-rendering: optimizeLegibility;
+        font-size: xx-large;
+    }
+
 }
