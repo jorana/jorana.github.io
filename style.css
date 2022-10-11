@@ -3,7 +3,7 @@
 body {
     /*overflow: hidden;*/
     min-height: 105vh;
-    background: url(../lab01/images/fantasy-iphone-wallpaper-2.jpg);
+    background: url(../fantasy-iphone-wallpaper-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,7 +258,7 @@ form .icons a{
 
     section {
         min-height: 100vh;
-        background: url(../lab01/images/background_1.jpg);
+        background: url(../background_1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -300,7 +300,7 @@ form .icons a{
     }
     
     .bg {
-        background: url(../lab01/images/background_1.jpg);
+        background: url(../background_1.jpg);
     }
     
     h3 {
