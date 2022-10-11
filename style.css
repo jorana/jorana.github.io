@@ -248,7 +248,7 @@ form .icons a{
     body {
         /*overflow: hidden;*/
         min-height: 100vh;
-        background: url(../lab01/images/background_1.jpg);
+        background: url(../background_1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
