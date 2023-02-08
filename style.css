@@ -15,7 +15,7 @@
     height: 100vh;
     display: flexbox;
     background-image: linear-gradient(grey, lightgrey);
-    background-image: url(https://github.com/jorana/jorana.github.io/main/Images/Vector_2640.jpg);
+    background-image: url(/Images/Vector_2640.jpg);
     background-position: center;
     background-size: cover;
 }
