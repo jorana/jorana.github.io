@@ -15,7 +15,7 @@
     height: 100vh;
     display: flexbox;
     background-image: linear-gradient(grey, lightgrey);
-    background-image: url(/Images/Vector_2640.jpg);
+    background-image: url(../Lab01/Images/Vector_2640.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -198,10 +198,6 @@ form .icons a{
     font-stretch: 600;
     width: 38px;
     margin-right: 10px;
-}
-
-.icons:hover {
-    color: chartreuse;
 }
 
 label, h2, input, textarea {
@@ -408,6 +404,13 @@ p {
 
     .kits {
         width: 300px;
+    }
+
+    /*SUCCESS CSS*/
+    .success {
+        color:burlywood;
+        margin-top: 200px;
+        margin-left: 150px;
     }
 
 }
