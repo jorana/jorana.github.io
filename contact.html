@@ -23,23 +23,30 @@
             </div>
         </nav>
         <div class="form">
-            <form action="mailto:johnathan.orana@gmail.com.com" method="POST" autocomplete="off" enctype="text/plain">
+                <form action="https://formsubmit.co/johnathan.orana@gmail.com" method="POST" autocomplete="off" enctype="text/plain">
+                
+                <!--Spam Prevention-->
+                <input type="text" name="_hello" style="display: none;">
+
+                <!--Disable Capcha-->
+                <input type="hidden" name="_capcha" value="false">
+                
                 <div class="title">
                     <h2>Contact</h2><br>
                 </div>
                 <div class="half">
                     <div class="item">
                         <label for="name">NAME</label>
-                        <input type="text" id="name" autocomplete="false" placeholder="Your Name here">
+                        <input type="text" id="name" autocomplete="false" placeholder="Your Name here" name="Name" required>
                     </div>
                     <div class="item">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" autocomplete="false" placeholder="Your Email here">
+                        <input type="email" id="email" autocomplete="false" placeholder="Your Email here" name="email" required>
                     </div>
                 </div>
                 <div class="full">
                     <label for="message">MESSAGE</label>
-                    <textarea name="" id="message" autocomplete="false" placeholder="Please type your message."></textarea>
+                    <textarea name="" id="message" autocomplete="false" placeholder="Please type your message." namae="message" required></textarea>
                 </div>
                 <div class="action">
                     <input type="submit" value="SEND MESSAGE">
